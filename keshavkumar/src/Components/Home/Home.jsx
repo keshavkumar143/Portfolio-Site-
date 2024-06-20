@@ -2,12 +2,13 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
+import resume from '../images/Resume.pdf'
+import profile from '../images/imag1.jpg'
 
 function Home() {
 
   const openResume = () => {
-    window.open('src/Components/images/Resume.pdf', '_blank');
+    window.open(resume, '_blank');
   };
 
   return (
@@ -15,7 +16,7 @@ function Home() {
       <div className="max-w-4xl px-6 py-12 rounded-lg shadow-lg text-center">
         <div className="flex flex-col md:flex-row items-center justify-center mb-8">
           <img
-            src= 'src/Components/images/imag1.jpg'
+            src= {profile}
             alt="Profile"
             className="rounded-full h-40 w-40 mb-6 md:mb-0 md:mr-8 hover:animate-bounce"
           />

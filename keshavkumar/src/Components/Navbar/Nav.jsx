@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
+import logoImage from '../images/download.png'
 
 
 function Nav() {
@@ -8,7 +9,7 @@ function Nav() {
     <div className="NavContainer flex justify-between p-4">
       <div className="logo cursor-pointer md:block hidden">
         <Link to="/">
-          <img src="src/Components/images/download.png" className="h-20 w-18" alt="Logo" />
+          <img src={logoImage} className="h-20 w-18" alt="Logo" />
         </Link>
       </div>
       <div className="components">

@@ -27,7 +27,7 @@ function Contact() {
         toast.error('Please fill in all fields');
         return;
       }
-      const response = await axios.post('http://localhost:8000/send-email', formData);
+      const response = await axios.post('https://portfolio-site-3.onrender.com/send-email', formData);
 
       toast.success('Recieved your Mail', {
         position: "top-right",

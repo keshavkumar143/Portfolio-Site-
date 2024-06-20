@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black; 
+    font-family: "Work Sans", sans-serif;
+    scrollbar-width: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+

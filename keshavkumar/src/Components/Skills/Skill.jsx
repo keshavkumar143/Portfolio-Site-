@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faJava, faAws, faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faJava, faAws, faGitAlt, faFigma } from '@fortawesome/free-brands-svg-icons';
 import './Skill.css';
 
 function Skill() {
@@ -14,25 +14,27 @@ function Skill() {
     { name: 'Java', icon: faJava, color: 'text-red-600', description: 'Java' },
     { name: 'AWS', icon: faAws, color: 'text-yellow-600', description: 'Amazon Web Services' },
     { name: 'Git', icon: faGitAlt, color: 'text-red-500', description: 'Git' },
+    { name: 'Figma', icon: faFigma, color: 'text-red-500', description: 'Figma' },
   ];
 
   return (
     <div className="py-12">
       <div className="container mx-auto px-4 font-bold text-2xl md:text-2xl lg:text-3xl mb-5 block text-center">
-        <Typewriter
-          words={['Skills']}
-          loop={Infinity}
-          cursor
-          cursorStyle="|"
-          typeSpeed={70}
-          deleteSpeed={50}
-          delaySpeed={1000}
-          className="text-red-500"
-        />
+        <div className="text-red-500">
+          <Typewriter
+            words={['Skills']}
+            loop={Infinity}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 skills-container md:items-center mx-auto ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 skills-container md:items-center mx-auto">
         {skills.map((skill, index) => (
-          <div key={index} className="skill-item relative">
+          <div key={index} className="skill-item relative group">
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transition duration-300 transform hover:scale-105 hover:shadow-xl">
               <div className="text-5xl mb-4">
                 <FontAwesomeIcon icon={skill.icon} className={`h-16 w-16 ${skill.color} flip-icon`} />

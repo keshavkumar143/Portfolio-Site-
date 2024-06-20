@@ -23,7 +23,7 @@ function Home() {
             <h1 className="text-6xl text-red-600 font-bold mb-4">Keshav Kumar</h1>
             <div className="font-bold text-xl md:text-3xl lg:text-4xl text-red-400 mb-8">
               <Typewriter
-                words={['Coder', 'Software Engineer', 'Full Stack Developer', 'JavaScript Enthusiast']}
+                words={['Coder', 'Software Engineer', 'Full Stack Developer']}
                 loop={Infinity}
                 cursor
                 cursorStyle="|"

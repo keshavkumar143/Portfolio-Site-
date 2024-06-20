@@ -30,7 +30,7 @@ function Project() {
   return (
     <div className="py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">
+        <h2 className="text-3xl font-bold text-center mb-8 text-red-600">
           <Typewriter
             words={['Projects']}
             loop={Infinity}

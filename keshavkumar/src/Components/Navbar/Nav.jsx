@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
-import logoImage from '../images/download.png'
-
+import logoImage from '../images/download.png';
 
 function Nav() {
   return (
@@ -13,7 +12,7 @@ function Nav() {
         </Link>
       </div>
       <div className="components">
-        <ul className="list flex justify-evenly gap-8 cursor-pointer text-2xl mr-3 sm:gap-4">
+        <ul className="list flex justify-evenly md:gap-8 gap-3 cursor-pointer text-2xl mr-3 sm:gap-2">
           <li>
             <Link to="/" className="hover:text-red-400">Home</Link>
           </li>

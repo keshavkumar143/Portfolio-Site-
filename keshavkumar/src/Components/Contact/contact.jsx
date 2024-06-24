@@ -98,7 +98,7 @@ function Contact() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline bg-gray-200 placeholder-gray-400"
                 id="email"
                 type="email"
-                placeholder="example@gmail.com"
+                placeholder="your@gmail.com"
                 value={formData.email}
                 onChange={handleChange}
               />

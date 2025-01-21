@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faJava, faAws, faGitAlt, faFigma } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faJava, faAws, faGitAlt, faFigma ,faAngular } from '@fortawesome/free-brands-svg-icons';
 import './Skill.css';
 
 function Skill() {
@@ -15,6 +15,7 @@ function Skill() {
     { name: 'AWS', icon: faAws, color: 'text-yellow-600', description: 'Amazon Web Services' },
     { name: 'Git', icon: faGitAlt, color: 'text-red-500', description: 'Git' },
     { name: 'Figma', icon: faFigma, color: 'text-red-500', description: 'Figma' },
+    {name : 'Angular', icon: faAngular, color: 'text-blue-400', description: 'Angular' }
   ];
 
   return (

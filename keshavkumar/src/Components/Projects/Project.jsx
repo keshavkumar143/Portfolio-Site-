@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 import blogImage from '../images/Blog.png';
-import votingImage from '../images/votingapp.png'; 
+import votingImage from '../images/votingapp.png';
 import quizImage from '../images/quiz.png'
 function Project() {
   const projects = [
@@ -18,8 +18,8 @@ function Project() {
       githubLink: 'https://github.com/keshavkumar143/voting001.git',
       image: votingImage
     },
-    
-  {
+
+    {
       name: 'Quiz Application',
       description: 'The Quiz Application allows users to participate in quizzes on various topics. It features a responsive frontend interface where users can answer multiple-choice questions in real-time quizzes. The application provides instant feedback on correct answers and may include features for tracking user scores.',
       githubLink: 'https://github.com/keshavkumar143/Quiz-Game.git',
@@ -50,10 +50,10 @@ function Project() {
                 <div className="flex items-center justify-center mb-4 relative aspect-w-16 aspect-h-9">
                   <img src={project.image} alt={project.name} className="object-cover w-full h-full" />
                 </div>
-               
+
                 <h3 className="text-2xl font-semibold mb-2 text-black">{project.name}</h3>
                 <p className="text-gray-700 mb-4">{project.description}</p>
-               
+
                 <div className="flex space-x-4">
                   <a
                     href={project.githubLink}

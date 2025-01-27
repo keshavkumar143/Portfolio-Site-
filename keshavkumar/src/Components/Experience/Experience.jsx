@@ -15,7 +15,7 @@ function Experience() {
         {
             role: 'Software Developer',
             company: 'CG Infinity',
-            duration: 'Sept 2022 - Present',
+            duration: 'Sept 2024 - Present',
             description: 'Designing user-centric interfaces and working on the development of web applications using Next.js and .NET.',
             svg: CgLogo
         }

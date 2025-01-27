@@ -16,7 +16,7 @@ function Home() {
       <div className="max-w-4xl px-6 py-12 rounded-lg shadow-lg text-center">
         <div className="flex flex-col md:flex-row items-center justify-center mb-8">
           <img
-            src= {profile}
+            src={profile}
             alt="Profile"
             className="rounded-full h-40 w-40 mb-6 md:mb-0 md:mr-8 hover:animate-bounce"
           />
@@ -35,19 +35,19 @@ function Home() {
             </div>
           </div>
         </div>
-        
+
         <p className="text-xl leading-relaxed mb-8">
           A dedicated full stack developer adept at crafting seamless web experiences using JavaScript, React, Node.js, and cloud technologies.
         </p>
-        
-       
+
+
         <button
           className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md text-lg transition-colors duration-300"
           onClick={openResume}
         >
           My Resume
         </button>
-        
+
         <div className="flex justify-center space-x-4 my-8">
           <a
             href="https://github.com/keshavkumar143"
@@ -66,9 +66,9 @@ function Home() {
             <FontAwesomeIcon icon={faLinkedin} className="fa-2x animate-bounce" />
           </a>
         </div>
-        
+
         <hr className="w-16 border-t-2 border-red-400 mb-8 mx-auto" />
-        
+
       </div>
     </div>
   );

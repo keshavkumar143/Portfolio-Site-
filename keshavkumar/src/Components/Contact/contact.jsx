@@ -3,13 +3,14 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
+
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -20,16 +21,16 @@ function Contact() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
+    e.preventDefault(); // Prevent the default form submission
+    setLoading(true);
     try {
       if (!formData.name || !formData.email || !formData.message) {
         toast.error('Please fill in all fields');
+        setLoading(false); // Reset loading state
         return;
       }
       const response = await axios.post('https://portfolio-site-3.onrender.com/send-email', formData);
-
-      toast.success('Recieved your Mail', {
+      toast.success('Received your Mail', {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -51,9 +52,10 @@ function Contact() {
       } else if (error.request) {
         toast.error('Network error. Please try again later.');
       } else {
-        toast.error('Failed to send message');
-        console.error('Error sending email:', error);
+        toast.error('An unexpected error occurred.');
       }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -108,7 +110,7 @@ function Contact() {
                 Message
               </label>
               <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline h-32 resize-none bg-gray-200 placeholder-gray-400"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus :outline-none focus:shadow-outline h-32 resize-none bg-gray-200 placeholder-gray-400"
                 id="message"
                 placeholder="Your message here..."
                 value={formData.message}
@@ -119,8 +121,9 @@ function Contact() {
               <button
                 className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
+                disabled={loading} 
               >
-                Submit
+                {loading ? 'Submitting...' : 'Submit'} 
               </button>
             </div>
           </form>

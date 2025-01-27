@@ -23,6 +23,9 @@ function Nav() {
             <Link to="/projects" className="hover:text-red-400">Projects</Link>
           </li>
           <li>
+            <Link to="/experience" className="hover:text-red-400">Experience</Link>
+          </li>
+          <li>
             <Link to="/contact" className="hover:text-red-400">Contact</Link>
           </li>
         </ul>

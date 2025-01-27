@@ -53,12 +53,12 @@ function Experience() {
                                         className="w-8 h-8 mr-3"
                                     />
                                 )}
-                                <h4 className="text-lg font-medium text-gray-600">
+                                <h4 className="text-lg font-medium text-black">
                                     {exp.company}
                                 </h4>
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-800 mb-2">{exp.role}</h3>
-                            <p className="text-sm text-gray-500 mb-3">{exp.duration}</p>
+                            <h3 className="text-xl font-semibold text-black mb-2">{exp.role}</h3>
+                            <p className="text-sm text-gray-800 mb-3">{exp.duration}</p>
                             <p className="text-gray-700 text-base">{exp.description}</p>
                         </motion.div>
                     ))}

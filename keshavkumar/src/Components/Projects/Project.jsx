@@ -51,8 +51,8 @@ function Project() {
                   <img src={project.image} alt={project.name} className="object-cover w-full h-full" />
                 </div>
                
-                <h3 className="text-2xl font-semibold mb-2">{project.name}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-2xl font-semibold mb-2 text-black">{project.name}</h3>
+                <p className="text-gray-700 mb-4">{project.description}</p>
                
                 <div className="flex space-x-4">
                   <a

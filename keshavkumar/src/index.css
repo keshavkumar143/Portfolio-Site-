@@ -5,6 +5,7 @@
     color: black; 
     font-family: "Work Sans", sans-serif;
     scrollbar-width: none;
+    background-color: rgb(252, 252, 252);
 }
 
 @tailwind base;

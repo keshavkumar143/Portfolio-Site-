@@ -13,7 +13,7 @@ function Experience() {
     ];
 
     return (
-        <div className="py-12 bg-gray-100">
+        <div className="py-12">
             <div className="container mx-auto px-4">
                 <div className="font-bold text-2xl md:text-3xl lg:text-4xl mb-10 text-center">
                     <div className="text-red-500">

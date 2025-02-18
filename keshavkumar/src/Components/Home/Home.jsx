@@ -51,7 +51,7 @@ function Home() {
 
 
         <button
-          className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md text-lg transition-colors duration-300"
+          className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md text-lg transition-all duration-300 ease-in-out"
           onClick={openResume}
         >
           My Resume

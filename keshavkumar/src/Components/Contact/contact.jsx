@@ -22,12 +22,12 @@ function Contact() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent the default form submission
+    e.preventDefault(); 
     setLoading(true);
     try {
       if (!formData.name || !formData.email || !formData.message) {
         toast.error('Please fill in all fields');
-        setLoading(false); // Reset loading state
+        setLoading(false); 
         return;
       }
       const response = await axios.post('https://portfolio-site-3.onrender.com/send-email', formData);

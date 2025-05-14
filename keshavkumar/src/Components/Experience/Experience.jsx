@@ -31,7 +31,7 @@ function Experience() {
       company: "CG Infinity",
       duration: "September 2024 - Present",
       description:
-        "Focused on creating user-centric interfaces and building web applications with Next.js, .NET, and Node-RED.",
+        "Focusing on creating user-centric interfaces and building web applications with Next.js, .NET, and Node-RED.",
       svg: CgLogo,
     },
   ];

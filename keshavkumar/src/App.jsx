@@ -1,6 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
-import AnimatedCursor from "react-animated-cursor";
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Nav from './Components/Navbar/Nav';
 import Home from './Components/Home/Home'
 import Contact from './Components/Contact/contact'

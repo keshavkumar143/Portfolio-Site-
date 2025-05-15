@@ -100,7 +100,7 @@ function Project() {
               variants={fadeIn}
               whileHover={{
                 y: -10,
-                boxShadow: "0 25px 50px -12px rgba(229, 62, 62, 0.25)",
+                boxShadow: "0 25px 50px -12px rgba(199, 210, 254, 0.5)",
               }}
               transition={{ type: "spring", stiffness: 300 }}
             >

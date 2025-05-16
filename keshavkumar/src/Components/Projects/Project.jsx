@@ -132,7 +132,7 @@ function Project() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <FaGithub className="text-xl" />
+                    <FaGithub className="text-xl text-white" />
                     <span className="text-white">View Code</span>
                   </motion.a>
                 </div>

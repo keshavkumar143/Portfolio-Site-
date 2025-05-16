@@ -47,7 +47,7 @@ function Home() {
   const buttonVariants = {
     hover: {
       scale: 1.05,
-      boxShadow: "0px 8px 15px rgba(229, 62, 62, 0.3)",
+      boxShadow: "0px 8px 15px rgba(199, 210, 254,0.5)",
       transition: {
         type: "spring",
         stiffness: 400,

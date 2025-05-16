@@ -53,7 +53,7 @@ function Experience() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white py-24 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-900 to-black text-white py-24 px-6">
       <motion.div
         className="container mx-auto"
         initial="hidden"

@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,9 +6,3 @@
     font-family: "Work Sans", sans-serif;
     scrollbar-width: none;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-

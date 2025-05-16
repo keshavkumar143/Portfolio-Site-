@@ -158,7 +158,7 @@ function Home() {
                 </motion.button>
 
                 <motion.a
-                  href="/contact"
+                  href="mailto:keshavkumar21167@gmail.com"
                   className="border border-indigo-400 text-black bg-indigo-400 hover:bg-indigo-600 hover:text-white py-3 px-8 rounded-full font-semibold flex items-center transition-colors duration-300"
                   variants={buttonVariants}
                   whileHover="hover"

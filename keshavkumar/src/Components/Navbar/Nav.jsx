@@ -45,7 +45,7 @@ function Nav() {
         </motion.div>
         <div className="components">
           <ul className="list flex justify-evenly md:gap-8 gap-3 cursor-pointer text-lg md:text-xl mr-3 hover:text-indigo-800">
-            {["Home", "Skills", "Projects", "Experience", "Contact"].map(
+            {["Home", "Skills", "Projects", "Experience"].map(
               (item, index) => (
                 <motion.li
                   key={item}
